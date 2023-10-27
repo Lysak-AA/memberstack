@@ -7,11 +7,12 @@ const openModal = (type) => {
 <template>
   <main class="home">
     <h1>Home Page</h1>
-    <button data-ms-modal="signup" @click="openModal('SIGNUP')">Sign Up</button>
+    <span>Those buttons below invoke pre build ms modal without using ms attributes. But they have to use js methods</span>
+    <button @click="openModal('SIGNUP')">Sign Up</button>
     <br>
-    <button data-ms-modal="login" @click="openModal('LOGIN')">Log in</button>
+    <button @click="openModal('LOGIN')">Log in</button>
     <br>
-    <a href="" data-ms-modal="signup">Sign Up Link</a>
+    <span>This is a link that invokes pre build ms modals using ms attributes: <a data-ms-modal="signup" class="m-link">Sign Up Link</a></span>
   </main>
 </template>
 
@@ -23,5 +24,9 @@ const openModal = (type) => {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.m-link {
+  color: blue;
+  cursor: pointer;
 }
 </style>
