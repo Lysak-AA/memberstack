@@ -7,7 +7,7 @@ const openModal = (type) => {
 <template>
   <main class="home">
     <h1>Please Sign Up</h1>
-    <span>Those buttons below invoke pre build ms modal without using ms attributes. But they have to use js methods</span>
+    <span>Those buttons below invoke pre build ms modal without using ms attributes. But they have to use js methods </span>
     <button @click="openModal('SIGNUP')">Sign Up</button>
     <br>
     <button @click="openModal('LOGIN')">Log in</button>
